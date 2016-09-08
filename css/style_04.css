@@ -1,0 +1,147 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html, body{
+    position: static;
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    position: relative;
+}
+*{
+    outline: none;
+}
+.index-wrapper {
+    position: relative;
+}
+nav {
+    background-color: #ccc;
+    position: relative;
+    height: 100vh;
+    width: 15%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    background-color: white;
+    height: 30%;
+    width: 100%;
+    color: black;
+    margin: 30px auto 0;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon h1 a {
+    font-size: 3rem;
+    font-style: italic;
+    text-decoration: none;
+}
+.nav-list {
+    margin: 30px auto 0;
+}
+.nav-list li {
+    list-style: none;
+    padding: 5px 0;
+}
+.nav-list li a {
+    margin: 0 0 0 -15px;
+    color:  white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+    height: 100vh;
+    width: 85%;
+    background-color: grey;
+}
+.header, .about, .contact {
+    padding: 0 30px 0;
+}
+.header {
+    background-color: cornsilk;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+.header h1 {
+    font-size: 3rem;
+}
+.header p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.about {
+    background-color: antiquewhite;
+    height: 50%;
+    overflow: hidden;
+}
+.about h2 {
+    padding: 30px 0 10px;
+    font-size: 2rem;
+}
+.about p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 0 auto;
+    width: 50%;
+}
+footer {
+    background-color: beige;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.contact li {
+    margin: 0 20px 0;
+    list-style: none;
+}
+.contact li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

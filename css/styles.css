@@ -486,6 +486,20 @@ and (max-width : 480px) {
 .works-list li:hover {
     animation: dlBtn 200ms ease-in forwards;
 }
+.works-list h2 {
+    display: inline-block;
+    text-shadow: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0 0;
+    color: #F4F4F4; 
+    font-family: 'whitney';
+    font-size: 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 @-webkit-keyframes dlBtn {
     0% {
         font-size: 1rem;

@@ -1,0 +1,219 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+html, body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    color: black;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    font-family: 'am';
+}
+.scroll-bottom {
+    height: 999px;
+}
+@font-face {
+    font-family: canon;
+    src: url("../font/markup-01-fonts/Canon TypeStar 210.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: great;
+    src: url("../font/markup-01-fonts/Great Day Personal Use.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: am;
+    src: url("../font/markup-01-fonts/AM_TP001.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.index-wrapper {
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    /* flex-box */
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+}
+.top {
+    height: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: beige;
+}
+.contact-top {
+    width: 50%;
+    float: right;
+}
+.contact-list li {
+    display: inline-block;
+    margin: 30px 50px 0 0;
+    float: right;
+    clear: left;
+}
+.contact-list li a {
+    text-decoration: none;
+    font-family: 'canon';
+    color: #000;
+    font-size: 1.3rem;
+    transition: 200ms;
+}
+.contact-list li a:hover {
+    color: #fff;
+}
+.contact-top p {
+    text-align: center;
+    clear: right;
+    padding: 30px 50px 0;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+title {
+    width: 50%;
+    float: left; 
+}
+.header {
+    margin: 30px 0 0 50px;
+}
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+}
+.icon {
+    padding: 0 0 5px;
+}
+.h1 {
+    text-decoration: none;
+    color: black;
+    font-family: 'great';
+    font-size: 4rem;
+}
+.h1:hover {
+    color: #8e561a;
+}
+
+.gallery {
+    background-color: lightgoldenrodyellow;
+    height: 65vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.about {
+    background-color: aliceblue;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.article {
+    width: 50%;
+    float: left;
+}
+.article-title {
+    width: 70%;
+    margin: 0 auto;
+    float: right;
+    padding: 25px;
+    font-family: 'canon';
+    font-size: 3rem;
+    text-align: right;
+}
+.text {
+    width: 70%;
+    padding: 5px 20px 15px;
+    float: right;
+    color: #121212;
+    font-size: 1.15rem;
+    text-align: right;
+}
+.side-img {
+    height: 100%;
+    width: 50%;
+    float: right;
+    padding: 130px 0;
+}
+.article-img {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img {
+    background-image: url(/images/image.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: auto 0;
+}
+footer {
+    height: 10vh;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 30px 0 0;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+footer ul li a:hover {
+    color: #8e561a;
+}
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    color: grey;
+}
+.back-to-top:hover {
+    color: #8e561a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
