@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>errhanfc — Resume and Online Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="designer, web designer, ux, ux design, user experience, ui, ui design, user interface, freelance, ph, philippines, errhan calizon"/>
+    <meta name="description" content="Aspiring Front-End Web Developer Graduated @ UE Caloocan PH"/>
+    <meta property="og:title" content="Errhan Calizon, Web Developer"/>
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <section class="container-wrap">
+        <div class="landing-page-content">
+            <ul class="side-navigator">
+                <li id="nav-left">
+                    <span class="nav" onclick="About()">Bio</span>
+                    <img src="images/arrow.png" onclick="About()" id="left-arrow">
+                </li>
+                <li id="nav-right">
+                    <span class="nav" onclick="Work()">work</span>
+                    <img src="images/arrow.png" onclick="Work()" id="right-arrow">
+                </li>
+            </ul>
+            <ul class="contact">
+                <li><a href="mailto:errhanfc@gmaicom?Subjt=Hi.%20" id="gmail">email</a></li>
+                <li><a href="cell://+63-9351-056130">phone</a></li>
+            </ul>
+            <h1 class="title">
+                <a href="index.html" id="name">Errhan Calizon</a>
+                <span class="sr-only">Errhan Calizon's "FIRST" Website Portfolio</span>
+                <span class="sr-only">A Portfolio that will evolve in my journey in the industry.</span>
+                <p>front-end web developer<span id="typing-bar">|</span></p>
+                <span id="sub-title-cropped">Fe Web Developer<span id="typing-bar">|</span></span>
+                <a id="download" href="cv/errhanc.pdf">download cv</a>
+            </h1>
+            <div id="credits" class="credits-container">
+                <div class="credits-content">
+                    <span class="creditCloseBtn">x</span>
+                    <h2>CREDITS</h2>
+                    <div class="credit-align-center">
+                        <p><span>Silverscreen</span> Font</p>
+                        <p class="font-by">by: Jason Kottke</p>
+                        <p><span>Gentleman on the Rainbow</span> Font</p>
+                        <p class="font-by">by: Maelle.K & Thomas Boucherie</p>
+                        <p><span>Whitney Medium</span> Font</p>
+                        <p class="font-by">by: Hoefler & Frere-Jones</p>
+                        <p><span>Arrow</span> Icon</p>
+                        <p class="font-by">by: Rauan</p>
+                    </div>
+                    <h3>thank you!</h3>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div id="about" class="about">
+                <a href="javascript:void(0)" class="closeAboutBtn" onclick="closeAboutBtn()">&times;</a>
+                <div>
+                    <h2>About</h2>
+                    <p class="intro">Hello ー( ´ ▽ ` )<span id="hello">ﾉ</span></p>
+                    <p class="intro">I am excited to join a company that will give me a solid working experience that help me produce stunning websites in my future endeavor.</p>
+                    <p class="intro">This is a <span class="emphasis">WIP portofolio </span>that will joining me in my journey in web development industry.</p>
+                </div>
+                <div class="skill">
+                    <h2>skill</h2>
+                    <a href="#advanced" id="advanced" class="skill-mastery">advanced</a>
+                    <ul id="advanced-skill-list" class="skill-list">
+                        <li class="skills">html</li>
+                        <li class="skills">css</li>
+                    </ul>
+                    <a href="#intermidiate-skill-list" id="intermidiate" class="skill-mastery">intermidiate</a>
+                        <ul id="intermidiate-skill-list" class="skill-list">
+                        <li class="skills">html5</li>
+                        <li class="skills">css3</li>
+                        <li class="skills">ui/ux</li>
+                    </ul>
+                    <a href="#beginner-skill-list" id="beginner" class="skill-mastery">beginner</a>
+                        <ul id="beginner-skill-list" class="skill-list">
+                        <li class="skills">JS</li>
+                        <li class="skills">JQuery</li>
+                        <li class="skills">php</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="work" class="work">
+                <a href="javascript:void(0)" class="closeWorkBtn" onclick="closeWorkBtn()">&times;</a>
+                <div class="my-works">
+                    <h2>work</h2>
+                    <ul class="works-list">
+                        <li><a href="" class="work-text">MARKUP DESIGN - 01</a></li>
+                        <li><a href="" class="work-text">MARKUP DESIGN - 02</a></li>
+                        <li><a href="" class="work-text">MARKUP DESIGN - 03</a></li>
+                        <li><a href="" class="work-text">MARKUP DESIGN - 04</a></li>
+                    </ul>
+                </div>
+                <div class="myjam">
+                    <h2>my Jams</h2>
+                    <ul class="my-jam-list">
+                        <li class="jam">Web Designing</li>
+                        <li class="jam">UI/ UX Design</li>
+                        <li class="jam">Wireframes</li>
+                    </ul>
+                </div>
+                <a id="creditsBtn" class="credits">CREDITS</a>
+            </div>
+        </aside>
+    </section>
+    <script>
+        function About() {
+            document.getElementById("about").style.width = "320px";
+            }
+        function closeAboutBtn() {
+            document.getElementById("about").style.width = "0";
+            }
+        function Work() {
+            document.getElementById("work").style.width = "320px";
+            }
+        function closeWorkBtn() {
+            document.getElementById("work").style.width = "0";
+            }
+
+        $(document).ready(function(){
+            $("#advanced").click(function(){
+                $("#advanced-skill-list").toggle();
+            });
+            $("#intermidiate").click(function(){
+                $("#intermidiate-skill-list").toggle();
+            });
+            $("#beginner").click(function(){
+                $("#beginner-skill-list").toggle();
+            });
+        });
+
+        var modal = document.getElementById('credits');
+        var btn = document.getElementById("creditsBtn");
+        var span = document.getElementsByClassName("creditCloseBtn")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
