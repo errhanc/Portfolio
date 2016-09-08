@@ -161,7 +161,7 @@ title {
     justify-content: center;
 }
 .img {
-    background-image: url(/images/image.png);
+    background-image: url(images/image.png);
     background-size: cover;
     height: 50px;
     width: 50px;

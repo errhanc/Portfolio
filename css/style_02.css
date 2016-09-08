@@ -129,7 +129,7 @@ form {
     box-shadow: 0 0 0 1px rgba(0,0,0, .3);
 }
 .image-container img {
-    background-image: url(/images/image.png);
+    background-image: url(images/image.png);
     background-size: cover;
     height: 50px;
     width: 50px;
