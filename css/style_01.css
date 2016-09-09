@@ -174,7 +174,7 @@ nav > a:first-child{
     transition: .3s;
     opacity: 0.3;
 }
-.Info-box img {
+.arroww {
     background-size: cover;
     height: 15px;
     width: 10px;
