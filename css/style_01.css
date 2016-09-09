@@ -264,7 +264,7 @@ nav > a:first-child{
     z-index: 0;
 }
 .img-container img {
-    background-image: url(/images/mdi-images/image.png);
+    background-image: url(images/mdi-images/image.png);
     background-size: cover;
     background-position: center;
     border: 0;
