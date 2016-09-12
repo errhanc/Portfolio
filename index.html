@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
-<body>
-    <section class="container-wrap">
-        <div class="landing-page-content">
+<body id="loader-wrapper">
+    <div class="container-wrap" id="content">
+        <section class="landing-page-content">
             <ul class="side-navigator">
                 <li id="nav-left">
                     <span class="nav" onclick="About()">Bio</span>
-                    <img src="images/arrow.png" onclick="About()" id="left-arrow">
                 </li>
                 <li id="nav-right">
                     <span class="nav" onclick="Work()">work</span>
-                    <img src="images/arrow.png" onclick="Work()" id="right-arrow">
                 </li>
             </ul>
             <ul class="contact">
                 <li><a href="mailto:errhanfc@gmaicom?Subjt=Hi.%20" id="gmail">email</a></li>
-                <li><a href="cell://+63-9351-056130">phone</a></li>
+                <li><a href="#phone-number" id="phone">phone</a>
+                    <span id="phone-number" class="pup-position">
+                        <span class="phone-text">#09351056130</span>
+                    </span>
+                </li>
             </ul>
             <h1 class="title">
                 <a href="index.html" id="name">Errhan Calizon</a>
@@ -53,11 +55,11 @@
                     <h3>thank you!</h3>
                 </div>
             </div>
-        </div>
+        </section>
         <aside>
             <div id="about" class="about">
                 <a href="javascript:void(0)" class="closeAboutBtn" onclick="closeAboutBtn()">&times;</a>
-                <div>
+                <div class="bio">
                     <h2>About</h2>
                     <p class="intro">Hello ー( ´ ▽ ` )<span id="hello">ﾉ</span></p>
                     <p class="intro">I am excited to join a company that will give me a solid working experience that help me produce stunning websites in my future endeavor.</p>
@@ -89,10 +91,10 @@
                 <div class="my-works">
                     <h2>work</h2>
                     <ul class="works-list">
-                        <h2>One Page Website Ideas</h2>
-                        <li><a href="markup/efc_markupd-01-index.html" class="work-text">Website Idea - 01</a></li>
-                        <li><a href="markup/efc_markupd-02-index.html" class="work-text">Website Idea - 02</a></li>
-                        <li><a href="markup/efc_markupd-03-index.html" class="work-text">Website Idea - 03</a></li>
+                        <h2>One Page Web UI Ideas</h2>
+                        <li><a href="markup/efc_markupd-01-index.html" class="work-text">Idea — 01</a></li>
+                        <li><a href="markup/efc_markupd-02-index.html" class="work-text">Idea — 02</a></li>
+                        <li><a href="markup/efc_markupd-03-index.html" class="work-text">Idea — 03</a></li>
                     </ul>
                 </div>
                 <div class="myjam">
@@ -106,8 +108,14 @@
                 <a id="creditsBtn" class="credits">CREDITS</a>
             </div>
         </aside>
-    </section>
+    </div>
     <script>
+        $(document).ready(function(){
+            $("#phone").click(function(){
+                $("#phone-number").toggle();
+            });
+        });
+        /* side — contents */
         function About() {
             document.getElementById("about").style.width = "320px";
             }
@@ -120,7 +128,7 @@
         function closeWorkBtn() {
             document.getElementById("work").style.width = "0";
             }
-
+        /* skills — drop down */
         $(document).ready(function(){
             $("#advanced").click(function(){
                 $("#advanced-skill-list").toggle();
@@ -132,7 +140,7 @@
                 $("#beginner-skill-list").toggle();
             });
         });
-
+        /* credit — modal */
         var modal = document.getElementById('credits');
         var btn = document.getElementById("creditsBtn");
         var span = document.getElementsByClassName("creditCloseBtn")[0];

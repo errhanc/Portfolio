@@ -21,8 +21,27 @@ html {
 body {
     position: relative;
 }
-*{
+* {
     outline: none;
+}
+.back {
+    position: fixed;
+    text-decoration: none;
+    background-color: #FF3B3F;
+    z-index: 3;
+    right: 5px;
+    bottom: 5px;
+    width: 5%;
+    height: 10%;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .index-wrapper {
     position: relative;
@@ -34,50 +53,73 @@ body {
     flex-direction: column;
 }
 .top {
+    position: relative;
     background-color: #fff;
-    height: 15%;
-}
-.contact {
-    height: 100%;
-    width: 50%;
-    float: right;
-}
-.contact-list li {
-    list-style: none;
-    display: inline-block;
-    float: right;
-    padding: 20px 50px 0 0;
-    font-size: 1.2rem;
-}
-header {
-    height: 100%;
-    width: 50%;
-    float: right;
+    height: 7%;
+    width: 100%;
+    background-color: #373737;
 }
 .icon {
-    margin: 20px 0 0 50px;
-    font-size: 1.2rem;
+    display: inline-block;
+}
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon .icon-text a {
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: 'Lato';
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: none;
+    margin: 4px 5rem;
+    cursor: pointer;
+}
+@media all and (max-width: 700px) {
+    .icon .icon-text a {
+        margin: 4px 1rem;
+    }
+    .top-contact-list {
+        display: none;
+    }
+    .About {
+        width: 100% !important;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .contact {
+        z-index: 0;
+        position: absolute;
+        top: 15vh;
+        left: -30%;
+        margin: auto;
+    }
+    .contact-form {
+        z-index: 0;
+        position: absolute;
+        top: 15vh;
+        right: -15%;
+        margin: auto;
+    }
 }
 .sr-only {
-    width: 0;
     position: absolute;
+    width: 0;
     overflow: hidden;
 }
-.h1 {
-    text-decoration: none;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    color: #141414;
-}
-.icon h2 {
-    color: rgba(0,0,0, .7);
-    font-size: 1.3rem;
-    font-style: italic;
-    letter-spacing: 2px;
-}
 nav {
-    background-color: #141414;
-    height: 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
     
     display: flex;
     flex-direction: column;
@@ -95,32 +137,221 @@ nav .nav-list{
 }
 .nav-list li a {
     color: #fff;
-    font-family: monospace;
-    font-size: 1.2rem;
+    font-family: 'Lato';
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: px;
+    transition: .2s;
 }
-section {
-    background-color: #fff;
-    height: 60%;
+.nav-list li a:hover {
+    transition: .1s;
+    padding: 0 0 3px 0;
+    border-bottom: 1px double rgba(255,255,255, .5);
 }
-footer {
-    background-color: #141414;
-    height: 15%;
-    color: white;
+.top-contact {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-footer a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.top-contact-list {
+    list-style: none;
+    margin: 0 auto;
+}
+.top-contact-list li {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+.top-contact-list li a {
     text-decoration: none;
     color: white;
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+section {
+    height: 86%;
+}
+.About {
+    background-color: rgba(0,0,0, .02);
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+}
+.about-us {
+    padding: 30px 30px 0;
+}
+.about-title {
+    display: inline;
+    padding: 0 5px;
+    border-top: 1px solid rgba(0,0,0, .3);
+    border-left: 3px double rgba(0,0,0, .3);
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.about-text {
+    padding: 10px 0 50px;
+    font-size: 1.2rem;
+    text-align: left;
+    text-indent: 20px;
+    line-height: 1.3rem;
+}
+
+.Gallery {
+    display: none;
+    height: 100%;    
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.gallery-container {
+    box-sizing: border-box;
+    text-align: center;
+    color: #000;
+    padding-top: 3%;
+}
+.img-container {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid rgba(0,0,0, .1);
+    height: 200px;
+    width: 200px;
+    border-radius: .4rem;
+    z-index: 0;
+}
+.img-container img {
+    background-image: url(../images/mdi-images/image.png);
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;    
+}
+
+.Contactt {
+    height: 100%;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-form{
+    background-color: #F0F0F0;
+    float: right;
+    margin: 0 20% 0 0;
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input, textarea{
+    display: inline-block;
+    margin: 5px 0 0 10px;
+    padding: 5px;
+    font-family: 'Lato';
+}
+form h2 {
+    font-family: 'Lato';
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.input {
+    display: block;
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    text-align: justify;
+    color: rgba(0,0,0, .7);
+}
+.button {
+    padding: 10px 20px;
+    border-radius: .4rem;
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    font-style: italic;
+    cursor: pointer;
+    z-index: 0;
+}
+textarea {
+    width: 90%;
+    height: 100px;
+    font-family: 'Lato';
+    font-size: 1rem;
+}
+.contact {
+    float: left;
+    margin: 0 0 0 35%;
+}
+.contact-list li {
+    display: block;
+    background-color: #ccc;
+    height: 1.5rem;
+    width: 85px;
+    margin: 0 0 3px;
+    padding: 5px 5px;
+    text-align: left;
+}
+.contact-list h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.contact-list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+/*    display: none;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+}
+footer .footer-content {
+    background-color: #373737;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .footer-content a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato';
     font-size: 1.3rem;
     font-style: italic;
+    display: inline;
+    margin: 0 auto;
 }
 
 
