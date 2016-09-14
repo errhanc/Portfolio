@@ -1,3 +1,4 @@
+/* RESET CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,7 +60,11 @@ body {
     text-transform: UPPERCASE;
     line-height: 1em;;
 }
-/* font used */
+h1::selection, h1 a::selection, h2::selection, h3::selection, p::selection, a::selection, span::selection, li::selection {
+  background: rgba(252,74,26, 1);
+  color: white;
+}
+/* Used font/s */
 @font-face {
     font-family: gotr;
     src: url("../font/Gentleman-on-the-Rainbow.ttf") format("truetype");
@@ -78,6 +83,7 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+/* @tryhard — responsive web design */
 @media all 
 and (min-width : 320px)
 and (max-width : 413px) {
@@ -110,36 +116,6 @@ and (max-width : 413px) {
         left: 45% !important;
     }
 }
-/*
-@media all and (min-width: 360px)
-and (min-width: 361px){
-    #name {
-        width: 100% !important;
-        font-size: 8rem !important;
-        line-height: 1.2rem;
-    }
-    #nav-left, #nav-right{
-        top: 70vh !important;
-        -webkit-transform: rotate(0deg) !important;
-    }
-    #nav-left {
-        left: 29.2vw !important;
-    }
-    #nav-right {
-        right: 24.3vw !important;
-    }
-    .skills {
-        display: none;
-    }
-    .pup-position {
-        top: 30% !important;
-        left: 45% !important;
-    }
-    #nav {
-        font-size: 1.2rem !important;
-    }
-}
-*/
 @media all and (min-width: 414px)
 and (max-width: 415px) {
      #name {
@@ -192,7 +168,6 @@ and (max-width: 768px) {
         font-size: 1.2rem !important;
     }
 }
-
 @media all and (min-width: 320px) and (max-width: 450px) {
     .title p {
         display: none;
@@ -203,7 +178,7 @@ and (max-width: 768px) {
         display: none;
     }
 }
-/* wrap index width*/
+/* Full Index — container  */
 .container-wrap {
     background-color: #373737;
     position: relative;
@@ -218,8 +193,7 @@ and (max-width: 768px) {
     justify-content: center;
     line-height: 2rem;
 }
-
-/* navigator */
+/* Text style */
 .nav, .contact li a, #download, .title a:first-child, .title p, #sub-title-cropped, .about h2, .skill-mastery, .skills, .work h2, .my-jam-list h2, .my-jam-list .jam  {
     font-family: 'silkscreen';
     color: #F4F4F4;
@@ -227,6 +201,7 @@ and (max-width: 768px) {
 h2, p, li, a{
     display: inline;
 }
+/* Side nav/s (bio, work)*/
 .nav {
     display: inline-block;
     text-align: center;
@@ -254,6 +229,7 @@ h2, p, li, a{
     cursor: pointer;
     transition: .3s;
 }
+/* Contact */
 .contact li a {
     color: #F4F4F4;
     padding: 0 15px;
@@ -274,6 +250,7 @@ h2, p, li, a{
         font-size: 1.1rem;
     }
 }
+/* phone# pop—up */
 .pup-position {
     position: absolute;
     display: none;
@@ -317,6 +294,7 @@ h2, p, li, a{
     color: rgba(252,74,26, 1); /* not gonna change */
     text-transform: capitalize;
     text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(0,0,0, .1);
     animation: blur 2s ease-in forwards;
 }
 .title p {
@@ -390,7 +368,6 @@ h2, p, li, a{
         font-size: 1.1rem;
     }
 }
-
 /* about */
 .about {
     position: fixed;
@@ -456,7 +433,6 @@ h2, p, li, a{
         -webkit-transform: rotate(5deg); 
     }
 }
-
 .emphasis {
     background-color: #F4F4F4;
     color: #373737;
@@ -483,7 +459,6 @@ h2, p, li, a{
     color: rgba(252,74,26,1);
     font-size: 50px;
 }
-
 /* Skills */
 .skill {
     clear: right;
@@ -535,7 +510,6 @@ h2, p, li, a{
     text-decoration: none;
     box-shadow: 2px 2px 0 0 #F4F4F4;
 }
-
 /* work */
 .work {
     position: fixed;
@@ -635,7 +609,6 @@ h2, p, li, a{
     font-size: 50px;
     color: rgba(252,74,26,1);
 }
-
 /* jam */
 .myjam {
     clear: right;
@@ -697,7 +670,6 @@ h2, p, li, a{
     background-color: #F4F4F4;
     animation: 1ms paused;
 }
-
 .credits-container {
     display: none;
     position: fixed;
@@ -744,19 +716,17 @@ h2, p, li, a{
 .credit-align-center {
     margin: 0 auto;
 }
-.credits-content p {
+.item-used {
+    display: block;
     font-family: 'silkscreen';
     font-size: 1rem;
     text-transform: capitalize;
     line-height: 1rem;
-    color: rgba(55,55,55, 1);;
-    text-align: left;
+    color: rgba(55,55,55, 1);
 }
 .credits-content p > span{
     color: white;
     background-color: grey;
-    height: 1rem;
-    width: 85px;
     padding: 0 3px;
 }
 .font-by {
@@ -765,18 +735,20 @@ h2, p, li, a{
     padding: 5px 15px;
     border-radius: 3rem;
     margin: 3px 0;
+    font-family: 'silkscreen';
+    font-size: 1rem;
+    text-transform: capitalize;
+    line-height: 1rem;
+    color: rgba(55,55,55, 1);
 } 
 .credits-content h3 {
     font-family: 'silkscreen';
     font-size: 1rem;
     text-transform: capitalize;
-    padding: 5px;
     border-radius: .3rem;
-    margin: 0 auto;
+    margin: 30px auto 0;
     text-align: center;
 }
-
-
 .creditCloseBtn {
     color: transparent;
 }

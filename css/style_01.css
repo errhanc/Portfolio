@@ -1,3 +1,4 @@
+/* RESET — CSS */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   margin: 0;
   padding: 0;
@@ -33,6 +34,8 @@ a:first-child, i{
 li {
     list-style: none;
 }
+
+/* Back—to—main */
 .back {
     position: fixed;
     text-decoration: none;
@@ -50,27 +53,34 @@ li {
     flex-direction: column;
     justify-content: center;
 }
+/* Index — container — wrapper */
 .index-wrapper {
     background-color: #FFF;
     height: 100%;
 }
+/* LEFT — items */
 .i-left {
     background-color: #CAEBF2;
     width: 30%;
     height: 100%;
     float: left;
+    box-shadow: 1px 0 1px -2px rgba(0,0,0, .3);
+    border-right: 1px solid rgba(0,0,0, .01);
 }
 header {
     margin: 30px 0 10px;
 }
+/* logo — container */
 .i-left h1 {
-    background-color: white;
+    background-color: #FFF;
     width: 90%;
-    padding: 10px 0;
+    padding: 10px 0; /* stretch top & bottom */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0, .3);
 }
+/* logo container — text design */
 .i-left h1 a {
     display: flex;
     flex-direction: column;
@@ -85,21 +95,36 @@ header {
     letter-spacing: 2px;
 }
 
-nav .nav-list{
-    display: none;
-    padding: 0 0 0 20px;
-}
+/* Menu — Bar */
 nav {
     display: inline-block;
 }
+/* menu — text */
+#MenuBtn {
+    display: block;
+    background-color: #FFF;
+    width: 100px;
+    padding: 3px 15px;
+    color: #FF3B3F;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0, .1);
+    letter-spacing: 3px;
+    box-shadow: 1px 0 2px -2px rgba(0,0,0, .3);
+}
+/* container */
 .menu {
 /*    display: none;*/
+    background-color: #FF3B3F;
     padding: 5px 3px;
     border: 1px solid rgba(255,255,255, .3);
-    background-color: #FF3B3F;
     list-style: none;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0, .3);
     animation: flip 600ms ease-in-out forwards;
 }
+/* animation */
 .menu:nth-child(1){ opacity: 0; -webkit-animation-delay: .0s }
 .menu:nth-child(2){ opacity: 0; -webkit-animation-delay: .20s }
 .menu:nth-child(3){ opacity: 0; -webkit-animation-delay: .40s }
@@ -118,21 +143,14 @@ nav {
         transform: translateY(0deg);
     }
 }
+/* menu li text */
 .menu a {
     color: #FFF;
-    padding: 5px;
-    font-size: 1.3rem;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
 }
-nav > a:first-child{
-    display: block;
-    background-color: white;
-    width: 100%;
-    padding: 5px 10px;
-    color: #FF3B3F;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-align: center;
-}
+
 
 .i-right {
     background-color: #F4F4F4;
@@ -141,7 +159,6 @@ nav > a:first-child{
     height: 100%;
     overflow: hidden;
 }
-
 .home-div {
     display: flex;
     flex-direction: row;
