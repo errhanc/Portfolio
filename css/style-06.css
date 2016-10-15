@@ -1,0 +1,242 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: 'roboto';
+}
+h1::selection, h1 a::selection, h2::selection, h3::selection, p::selection, a::selection, span::selection, li::selection {
+  background: rgba(252,74,26, 1);
+  color: rgba(255,255,255, 1);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url("../font/roboto.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hellostockholm';
+    src: url("../font/hellostockholm.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'moonflower';
+    src: url("../font/moonflower.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-cont {
+    height: 100%;
+}
+.top-nav {
+    background-color: rgba(253,253,253, 1);
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    box-shadow: 1px -2px 1.5px 1px rgba(0,0,0, 1);
+}
+.top-nav-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: rgba(5,6,7, .8);
+    font-family: 'hellostockholm';
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 10px 5rem;
+}
+.top-nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 5rem;
+}
+.top-nav-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 25px;
+    list-style: none;
+}
+.top-nav-list a {
+    color: rgba(5,6,7, .8);
+    font-family: 'moonflower';
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.top-cont .top-nav-list a:hover {
+    color: limegreen;
+}
+.top-bg {
+    position: relative;
+    height: 70%;
+    width: 100%;
+    background-image: url('/images/spiral-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+}
+.separate {
+    height: 15%;
+}
+.about {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about-cont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+.about-title {
+    color: (5,6,7, .8);
+    font-family: 'moonflower';
+    font-size: 2.5rem;
+    margin: 15px 0 1rem;
+}
+.about-text {
+    color: rgba(5,6,7, .8);
+    font-family: 'weblysleekuil';
+    font-size: 1.2rem;
+}
+.offers {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.offers-title {
+    color: rgba(5,6,7, .8);
+    font-family: 'moonflower';
+    font-size: 2.5rem;
+    padding: 0 0 1rem;
+    text-align: center;
+}
+.offers-m-cont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.offers-cont {
+    height: 90%;
+    width: 250px;
+    margin: 0 20px;
+}
+.offers-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0, .1);
+    height: 50%;
+}
+.offers-img img{
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+}
+.offers-cont h2 {
+    margin: 10px 0 0;
+    color: (5,6,7, .7);
+    font-family: 'roboto';
+    font-size: 1.2rem;
+}
+.offers-cont a {
+    font-size: .9rem;
+    color: dodgerblue;
+}
+hr {
+    width: 90%;
+    margin: auto;
+}
+footer {
+    padding: 1rem 0 1.5rem;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+#company-title {
+    font-family: 'roboto';
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+.social-media li {
+    padding: 0 0 0 30px;
+    list-style: none;
+}
+.social-media a {
+    font-family: 'roboto';
+    text-decoration: none;
+}
+
+
+
+
+
+

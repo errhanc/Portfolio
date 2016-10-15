@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>ui — idea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style-02.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="index-wrapper">
+        <div class="top">
+            <div class="icon">
+                <h1 class="icon-text"><a href="../ui-ideas/-02.html">title</a>
+                    <span class="sr-only">title</span>
+                </h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#About" id="AboutBtn">about</a></li>
+                    <li><a href="#Gallery" id="GalleryBtn">gallery</a></li>
+                    <li><a href="#Contact" id="ContactBtn">contact</a></li>
+                </ul>
+            </nav>
+            <div class="top-contact">
+                <ul class="top-contact-list">
+                    <li><a href="">contact</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div id="About" class="About">
+                <article class="about-us">
+                    <h2 class="about-title">About us</h2>
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ea iure voluptates fuga blanditiis optio soluta corporis consequatur. Voluptates quasi, earum. Labore incidunt deleniti dolore minima error mollitia repudiandae, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et maxime incidunt! Eum magni voluptate, assumen quod, iure cupiditate ipsam in architecto nesciunt similique, autem blanditiis praesentium itaque. Commodi, architecto.</p>
+                    <h2 class="about-title">What we offer?</h2>
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vel, reprehenderit quibusdam mollitia obcaecati maiores. Ea dolores deserunt beatae rem accusantium odit quae, voluptas velit, autem doloremque dolorem harum, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ea iure voluptates fuga blanditiis optio soluta corporis consequatur. Voluptates quasi, earum. Labore incidunt deleniti dolore minima error mollitia repudiandae.</p>
+                    <h2 class="about-title">Our Team</h2>
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ea iure voluptates fuga blanditiis optio soluta corporis consequatur. Voluptates quasi, earum. Labore incidunt deleniti dolore minima error mollitia repudiandae.</p>
+                </article>
+            </div>
+            <div id="Gallery" class="Gallery">    
+                <div class="gallery-container">
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                    <div class="img-container"><img src="../images/ui-ideas-images/img-icon.png" alt="" class=""></div>
+                </div>
+        </div>
+            <div id="Contact" class="Contactt" style="display: none;">
+                <div class="contact-content">
+                    <div class="contact">
+                        <ul class="contact-list">
+                           <h2>Social media </h2>
+                           <li><a href="">facebook</a></li>
+                           <li><a href="">twitter</a></li>
+                           <li><a href="">g+</a></li>
+                           <h2>Contact</h2>
+                           <li><a href="">telphone</a></li>
+                           <li><a href="">cellphone</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <h2>Contact us:</h2>
+                            <div class="form-alignment">
+                            <p><span class="input">First name:</span><input type="text" name="firstname"></p>
+                            <p><span class="input">Last name:</span><input type="text" name="lastname"></p>
+                            <p><span class="input">Message:</span><input type="text" name="lastname"></p>
+                            <p><textarea></textarea></p>
+                            <input type="submit" value="Submit" class="button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <a href="">title</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $("#AboutBtn").click(function(){
+            $("#Home").hide();
+            $("#About").show();
+            $("#Gallery").hide();
+            $("#Contact").hide();
+        });
+        $("#GalleryBtn").click(function(){
+            $("#Home").hide();
+            $("#About").hide();
+            $("#Gallery").show();
+            $("#Contact").hide();
+        });
+        $("#ContactBtn").click(function(){
+            $("#Home").hide();
+            $("#About").hide();
+            $("#Gallery").hide();
+            $("#Contact").show();
+        });
+    </script>
+</body>
+</html>
