@@ -96,7 +96,7 @@ nav {
 }
 .main-content {
     position: relative;
-    background-image: url(/images/body-bg.png);
+    background-image: url(../images/body-bg.png);
     padding: 20px 0;
 }
 .about {

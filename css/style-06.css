@@ -127,7 +127,7 @@ h1::selection, h1 a::selection, h2::selection, h3::selection, p::selection, a::s
     position: relative;
     height: 70%;
     width: 100%;
-    background-image: url('/images/spiral-pattern.jpg');
+    background-image: url(../images/spiral-pattern.jpg);
     background-size: cover;
     background-position: center;
     opacity: .9;
