@@ -11,106 +11,103 @@
     <link rel="stylesheet" href="css/style-main.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
-<body id="loader-wrapper">
-    <div class="container-wrap" id="content">
-        <section class="landing-page-content">
-            <ul class="side-navigator">
-                <li id="nav-left">
-                    <span class="nav" onclick="About()">Bio</span>
-                </li>
-                <li id="nav-right">
-                    <span class="nav" onclick="Work()">work</span>
-                </li>
+<body>
+<div class="container-wrapper" id="content">
+    <section>
+        <nav class="side-navigation">
+            <ul class="side-nav-list">
+                <li><span onclick="About()">bio</span></li>
+                <li><span onclick="Work()">work</span></li>
             </ul>
-            <ul class="contact">
-                <li><a href="mailto:errhanfc@gmaicom?Subjt=Hi.%20" id="gmail">email</a></li>
-                <li><a href="09351056130" id="phone">phone</a>
-                    <span id="phone-number" class="pup-position">
-                        <span class="phone-text">#09351056130</span>
-                    </span>
-                </li>
-            </ul>
-            <h1 class="title">
-                <a href="index.html" id="name">Errhan Calizon</a>
+        </nav>
+        <ul class="contact">
+            <li><a href="mailto:errhanfc@gmaicom?Subjt=Hi.%20" id="gmail">email</a></li>
+            <li><a href="" id="phone">+63-9351056130</a></li>
+        </ul>
+        <header class="landing-page">
+            <h1>
+                <a href="index.html" class="name">Errhan Calizon</a>
                 <span class="sr-only">Errhan Calizon's "FIRST" Website Portfolio</span>
                 <span class="sr-only">A Portfolio that will evolve in my journey in the industry.</span>
                 <p>front-end web developer<span id="typing-bar">|</span></p>
-                <span id="sub-title-cropped">Fe Web Developer<span id="typing-bar">|</span></span>
-                <a id="download" href="resume/errhanfc.pdf">download cv</a>
+                <span class="sub-title-cropped">Fe Web Developer<span id="typing-bar">|</span></span>
+                <a class="resume" href="resume/errhanfc.pdf">download cv</a>
             </h1>
-            <div id="credits" class="credits-container">
-                <div class="credits-content">
-                    <span class="creditCloseBtn">x</span>
-                    <h2>CREDITS</h2>
-                    <div class="credit-align-center">
-                        <p class="item-used"><span>Silverscreen</span> Font</p>
-                        <p class="font-by">by: Jason Kottke</p>
-                        <p class="item-used"><span>Gentleman on the Rainbow</span> Font</p>
-                        <p class="font-by">by: Maelle.K & Thomas Boucherie</p>
-                        <p class="item-used"><span>Whitney Medium</span> Font</p>
-                        <p class="font-by">by: Hoefler & Frere-Jones</p>
-                        <p class="item-used"><span>Arrow</span> Icon</p>
-                        <p class="font-by">by: Rauan</p>
-                    </div>
-                    <h3>2016 Errhan Calizon</h3>
+        </header>
+        <div id="credits" class="credits-container">
+            <div class="credits-content">
+                <span class="creditCloseBtn">x</span>
+                <h2>CREDITS</h2>
+                <div class="credit-align-center">
+                    <p class="item-used"><span>Silverscreen</span> Font</p>
+                    <p class="font-by">by: Jason Kottke</p>
+                    <p class="item-used"><span>Gentleman on the Rainbow</span> Font</p>
+                    <p class="font-by">by: Maelle.K & Thomas Boucherie</p>
+                    <p class="item-used"><span>Whitney Medium</span> Font</p>
+                    <p class="font-by">by: Hoefler & Frere-Jones</p>
+                    <p class="item-used"><span>Arrow</span> Icon</p>
+                    <p class="font-by">by: Rauan</p>
                 </div>
+                <h3>errhanfc (C) 2016</h3>
             </div>
-        </section>
-        <aside>
-            <div id="about" class="about">
-                <a href="javascript:void(0)" class="closeAboutBtn" onclick="closeAboutBtn()">&times;</a>
-                <div class="bio">
-                    <h2>About</h2>
-                    <p class="intro">Hello ー( ´ ▽ ` )<span id="hello">ﾉ</span></p>
-                    <p class="intro">I am very excited to join a company that will give me a solid working experience that make me produce stunning websites.</p>
-                    <p class="intro"><span class="emphasis"></span></p>
-                </div>
-                <div class="skill">
-                    <h2>skill</h2>
-                    <a href="#advanced" id="advanced" class="skill-mastery">advanced</a>
-                    <ul id="advanced-skill-list" class="skill-list">
-                        <li class="skills">html</li>
-                        <li class="skills">css</li>
-                    </ul>
-                    <a href="#intermidiate-skill-list" id="intermidiate" class="skill-mastery">intermidiate</a>
-                        <ul id="intermidiate-skill-list" class="skill-list">
-                        <li class="skills">html5</li>
-                        <li class="skills">css3</li>
-                        <li class="skills">ui/ux</li>
-                    </ul>
-                    <a href="#beginner-skill-list" id="beginner" class="skill-mastery">beginner</a>
-                        <ul id="beginner-skill-list" class="skill-list">
-                        <li class="skills">JS</li>
-                        <li class="skills">JQuery</li>
-                        <li class="skills">php</li>
-                    </ul>
-                </div>
+        </div>
+    </section>
+    <aside>
+        <div id="about" class="about">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeAboutBtn()">&times;</a>
+            <div class="bio">
+                <h2>About</h2>
+                <p>Hello ー( ´ ▽ ` )<span id="hello">ﾉ</span></p>
+                <p>I am very excited to join a company that will give me a solid working experience that make me produce stunning websites.</p>
             </div>
-            <div id="work" class="work">
-                <a href="javascript:void(0)" class="closeWorkBtn" onclick="closeWorkBtn()">&times;</a>
-                <div class="my-works">
-                    <h2>work</h2>
-                    <ul class="works-list">
-                        <h2>Web UI Ideas</h2>
-                        <p>html + css only</p>
-                        <li><a href="ui-ideas/uii-01.html" class="work-text">Idea — 01</a></li>
-                        <li><a href="ui-ideas/uii-02.html" class="work-text">Idea — 02</a></li>
-                        <li><a href="ui-ideas/uii-03.html" class="work-text">Idea — 03</a></li>
-                    </ul>
-                </div>
-                <div class="myjam">
-                    <h2>my Jams</h2>
-                    <ul class="my-jam-list">
-                        <li class="jam">Web Designing</li>
-                        <li class="jam">UI/ UX Design</li>
-                        <li class="jam">Wireframes</li>
-                    </ul>
-                </div>
-                <a id="creditsBtn" class="credits">CREDITS</a>
+            <div class="my-skills">
+                <h2>skills</h2>
+                <a href="#advanced" id="advanced">advanced</a>
+                <ul id="advanced-skill-list" class="skill-list">
+                    <li class="skills">html</li>
+                    <li class="skills">css</li>
+                </ul>
+                <a href="#intermidiate-skill-list" id="intermidiate" class="skill-mastery">intermidiate</a>
+                    <ul id="intermidiate-skill-list" class="skill-list">
+                    <li class="skills">html5</li>
+                    <li class="skills">css3</li>
+                    <li class="skills">ui/ux</li>
+                </ul>
+                <a href="#beginner-skill-list" id="beginner" class="skill-mastery">beginner</a>
+                    <ul id="beginner-skill-list" class="skill-list">
+                    <li class="skills">JS</li>
+                    <li class="skills">JQuery</li>
+                    <li class="skills">php</li>
+                </ul>
             </div>
-        </aside>
-    </div>
-    <script>
+        </div>
+        <div id="work" class="work">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeWorkBtn()">&times;</a>
+            <div class="my-works">
+                <h2>work</h2>
+                <ul class="work-list">
+                    <h3>「 ui ideas 」</h3>
+                    <a href="/ui-ideas/-01.html"><li>— 01</li></a>
+                    <a href="/ui-ideas/-02.html"><li>— 02</li></a>
+                    <a href="/ui-ideas/-03.html"><li>— 03</li></a>
+                    <a href="/ui-ideas/-04.html"><li>— 04</li></a>
+                    <a href="/ui-ideas/-05.html"><li>— 05</li></a>
+                    <a href="/ui-ideas/-06.html"><li>— 06</li></a>
+                </ul>
+            </div>
+            <div class="myjam">
+                <h2>my jam</h2>
+                <ul class="my-jam-list">
+                    <li>Web Designing</li>
+                    <li>UI/ UX Design</li>
+                    <li>Wireframes</li>
+                </ul>
+            </div>
+            <a id="creditsBtn" class="credits">CREDITS</a>
+        </div>
+    </aside>
+</div>
+<script>
         $(document).ready(function(){
             $("#phone").click(function(){
                 $("#phone-number").toggle();
